@@ -1,0 +1,24 @@
+{
+  "name": "tabler",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tabler/core": "^1.0.0-beta20",
+    "@tabler/icons": "^3.0.1",
+    "@tabler/icons-vue": "^3.0.3",
+    "bootstrap": "^5.3.3",
+    "bootstrap-vue": "^2.23.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.1.5"
+  }
+}
