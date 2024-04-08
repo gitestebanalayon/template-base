@@ -1,8 +1,9 @@
 <script setup>
-    import FormSearch from './page-sidebar/FormSearch.vue'
-    import InfoSocial from './page-sidebar/InfoSocial.vue'
-    import ThemeMode from './page-sidebar/ThemeMode.vue'
-    import DropDown from './page-sidebar/DropDown.vue'
+import FormSearch from './page-sidebar/FormSearch.vue'
+
+import InfoSocial from './page-sidebar/InfoSocial.vue'
+import ThemeMode from './page-sidebar/ThemeMode.vue'
+import DropNotifications from './page-sidebar/DropNotifications.vue'
 </script>
 
 <template>
@@ -11,21 +12,21 @@
 
         <!-- Page sidebar -->
         <div class="pt-3 pb-2 rounded-0 d-none d-lg-block">
-            <div class="nav-top container-xl d-flex justify-content-between">
+            <div class="ms-3 me-3 navbar-nav justify-content-between flex-row order-md-last">
 
                 <div class="d-flex gap-2">
                     <!-- Form search -->
-                    <FormSearch/>
-                    
+                    <FormSearch />
                 </div>
 
                 <div class="d-flex align-items-center gap-3">
+                    <div class="d-none d-md-flex gap-3">
+                        <!-- Theme mode -->
+                        <ThemeMode />
 
-                    <!-- Theme mode -->
-                    <ThemeMode />
-
-                    <!-- Dropdown -->
-                    <DropDown icon="ti ti-bell" title="Notificaciónes"/>
+                        <!-- DropNotifications -->
+                        <DropNotifications icon="ti ti-bell" name="Notificaciones" />
+                    </div>
 
                     <div class="navbar-nav flex-row">
                         <div class="nav-item dropdown">
